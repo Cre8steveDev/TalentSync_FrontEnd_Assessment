@@ -1,3 +1,6 @@
+import ButtonPry from "../Utilities/ButtonPry";
+import ButtonSec from "../Utilities/ButtonSec";
+
 /***
  * Header Component housing the navigation options and logo
  */
@@ -61,16 +64,8 @@ const Header = () => {
 
       {/* Call to Action Buttons  */}
       <section className="flex gap-2 ">
-        <input
-          type="button"
-          value="Talk to Sales"
-          className="px-[0.875rem] rounded-[6.25rem] border-[1px] border-gray-300 bg-white text-xs font-bold hover:text-white hover:bg-orange-400 hover:border-orange-400 transition ease-in cursor-pointer"
-        />
-        <input
-          type="button"
-          value="Sign up for free"
-          className="px-[0.875rem] py-[0.9rem] rounded-[6.25rem] bg-blue700 text-white text-xs font-bold border-0 hover:text-white hover:bg-green-600 transition ease-in cursor-pointer"
-        />
+        <ButtonSec text="Talk To Sales" />
+        <ButtonPry text="Start Your Free Trial" />
       </section>
     </header>
   );

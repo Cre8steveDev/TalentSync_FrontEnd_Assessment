@@ -29,7 +29,3 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.myrotate:hover {
-  transform: rotateZ("180deg") !important;
-}

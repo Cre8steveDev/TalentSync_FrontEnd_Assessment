@@ -2,6 +2,9 @@
  * Details Component: Housing the main copy of the hero section
  */
 
+import ButtonPry from "../Utilities/ButtonPry";
+import ButtonTer from "../Utilities/ButtonTer";
+
 const images = [
   "images/hero_img1.png",
   "images/hero_img2.png",
@@ -26,24 +29,21 @@ const Details = () => {
     <section className="pt-[8rem] w-full p-8 flex flex-col sm:flex-row justify-between gap-8">
       {/* Left Box here */}
 
-      <div className="w-full flex flex-col gap-6">
+      <div className="w-full flex flex-col gap-6  self-center">
         <h1 className="text-gray-800 font-extrabold xl:text-[3.3rem] lg:text-[2.4rem]">
           <p className="">Uniting the world, </p>
           <p className="-mt-3">one video call at a time</p>
         </h1>
-        <p className="w-[100%] text-lg xl:text-xl text-gray-500">
+        <p className="w-[100%] text-lg xl:text-2xl text-gray-500">
           Experience the future of communication with ClearLink - where
           crystal-clear video conferencing meets unparalleled simplicity.
         </p>
 
         <div className="flex gap-4">
-          <button className="text-sm bg-blue-700 p-3 text-white rounded-[100px] font-medium  transition ease-in hover:bg-green-500">
-            Start your free trial
-          </button>
-          <button className="flex text-sm font-medium items-center gap-2 transition ease-in">
-            <img src="icons/bot.png" className="w-[20px]" />
-            <p>Discover AI assistant</p>
-          </button>
+          <ButtonPry text="Start Your Free Trial" />
+
+          {/* Tertiary Button */}
+          <ButtonTer text="Discover AI assistant" />
         </div>
 
         <a href="#review">
@@ -56,7 +56,7 @@ const Details = () => {
       </div>
 
       {/* Right hand side image */}
-      <div className="w-full sm:w-[80%] flex flex-col justify-between items-center bg-blue-200 p-4 rounded-[1rem] shadow-2xl">
+      <div className="w-full sm:w-[80%] flex flex-col justify-between items-center bg-blue-200 p-4 rounded-[1rem] shadow-2xl self-center">
         {/* Images and icons go here */}
         <div className="grid grid-cols-3 gap-3 ">
           {/* iterate over them to create */}
