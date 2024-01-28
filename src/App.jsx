@@ -2,7 +2,7 @@
  * App Component Housing all other UI Components of the Website
  */
 
-import WhyClearLink from "./WhyClearLink/WhyClearLink.jsx";
+import WhyClearLink from "./components/WhyClearLink/WhyClearLink.jsx";
 import HeroSection from "./components/HeroSection/HeroSection.jsx";
 
 // Definition of App Component begins
