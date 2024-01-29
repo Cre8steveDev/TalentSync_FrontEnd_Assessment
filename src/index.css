@@ -28,4 +28,5 @@ main {
   background: url("/images/hero_background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }

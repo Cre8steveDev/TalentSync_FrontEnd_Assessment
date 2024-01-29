@@ -13,7 +13,7 @@ import Header from "./components/Header/Header.jsx";
 // Definition of App Component begins
 function App() {
   return (
-    <div className="w-full p-3 xl:px-[8rem] bg-white dark:bg-slate-400 font-[Inter] flex flex-col items-center gap-12">
+    <div className="w-full p-3 xl:px-[8rem] bg-white dark:bg-slate-400 font-[Inter] flex flex-col items-center gap-12 overflow-x-hidden">
       <Header />
       <HeroSection />
       <WhyClearLink />

@@ -22,7 +22,7 @@ const Header = () => {
   }, [lightMode]);
 
   return (
-    <div className="w-screen bg-white dark:bg-slate-400 dark:text-white sticky top-0  mt-10 z-[6]">
+    <div className=" w-full sm:w-screen bg-white dark:bg-slate-400 dark:text-white sticky top-0  mt-10 z-[6]">
       <header className="flex justify-between items-center bg-gray-100 py-[1rem] px-[2rem] rounded-[6.25rem] border-[1px] border-gray300 text-sm  w-full max-w-screen-xl mx-auto dark:bg-gray-800">
         {/* Logo and Name */}
 

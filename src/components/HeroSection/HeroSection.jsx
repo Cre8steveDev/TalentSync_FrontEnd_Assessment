@@ -9,7 +9,7 @@ import Companies from "./Companies.jsx";
 // Component Definition starts here
 const HeroSection = () => {
   return (
-    <main className=" pt-10 h-screen relative max-w-screen-xl -mt-[100px]">
+    <main className=" pt-10 sm:h-screen relative max-w-screen-xl -mt-[100px]">
       {/* <Header /> */}
       <Details />
       <Companies />
