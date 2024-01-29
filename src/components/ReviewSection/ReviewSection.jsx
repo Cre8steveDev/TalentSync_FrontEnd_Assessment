@@ -5,10 +5,10 @@
 
 const ReviewSection = () => {
   return (
-    <div className="w-full max-w-screen-xl flex justify-between items-center">
+    <div className="w-full max-w-screen-xl flex lg:flex-row flex-col justify-between items-center">
       {/* Left container for statement and rating */}
-      <div className="w-full flex flex-col gap-8">
-        <img src="logos/shopify.png" alt="" className="self-start" />
+      <div className="w-full flex flex-col gap-8 items-center lg:items-start">
+        <img src="logos/shopify.png" alt="" className="lg:self-start" />
         <section>
           {"⭐ "
             .repeat(5)
@@ -19,12 +19,12 @@ const ReviewSection = () => {
               </p>
             ))}
         </section>
-        <h3 className="text-4xl font-medium lg:pr-12">
+        <h3 className="text-4xl font-medium lg:pr-12 lg:text-left text-center">
           ClearLink has upgraded our remote meetings. High-quality video, screen
           sharing, and top-notch security make it essential for our team
         </h3>
 
-        <div className="flex justify-between">
+        <div className="flex justify-between md:mb-5 lg:mb-0">
           <section className="flex items-center">
             {/* Reviewer's Avatar */}
             <img
@@ -41,23 +41,23 @@ const ReviewSection = () => {
           </section>
 
           {/* Direction Buttons for next review */}
-          <section className="flex gap-3">
+          <section className="flex md:gap-3 sm:ml-4">
             <img
               src="icons/arrow_left.png"
               alt="Left"
-              className="rounded-full hover:shadow-xl hover:scale-125"
+              className="rounded-full hover:shadow-xl hover:scale-125 scale-75 md:scale-100"
             />
             <img
               src="icons/arrow_right.png"
               alt="Right"
-              className="rounded-full hover:shadow-xl hover:scale-110"
+              className="rounded-full hover:shadow-xl hover:scale-110 scale-75 md:scale-100"
             />
           </section>
         </div>
       </div>
 
       {/* Right container for review picture */}
-      <div className="w-full flex flex-col gap-3 items-center justify-center">
+      <div className="w-full flex flex-col gap-3 items-center justify-center mt-4 md:mt-0 ">
         {/* Top Image Grid */}
         <section className="w-full flex gap-3 justify-center">
           <img
@@ -73,7 +73,7 @@ const ReviewSection = () => {
         </section>
 
         {/* Bottom Image Grid */}
-        <section className="w-full flex gap-3 justify-center">
+        <section className="w-full flex gap-3 justify-center flex-wrap sm:flex-nowrap">
           <img
             src="images/review_img3.png"
             alt="Picture"

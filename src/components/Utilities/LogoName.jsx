@@ -11,7 +11,7 @@ const LogoName = () => {
           alt="Logo"
           className="w-[18.38px] h-[19px]"
         />
-        <h2 className="text-gray900 text-xl font-bold">
+        <h2 className="text-gray900 dark:text-gray-50 text-xl font-bold">
           ClearLink<span className=" text-bluedark400">.</span>
         </h2>
       </div>

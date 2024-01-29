@@ -14,19 +14,19 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <div className="w-screen flex flex-col sm:flex-row justify-between">
+    <div className="w-screen flex flex-col xl:flex-row justify-between">
       {/* Left Container comes here */}
-      <div className="w-full mx-auto flex justify-end mr-12">
+      <div className="w-full mx-auto flex justify-center xl:justify-end xl:mr-12">
         {/* Left Content Inner Container */}
-        <section className="w-[579px] flex flex-col gap-12">
-          <h2 className="text-[44px] font-bold leading-[50px]">
+        <section className="w-[579px] flex flex-col gap-12 items-center xl:items-start">
+          <h2 className="md:text-[44px] font-bold md:leading-[50px] text-3xl text-center xl:text-left">
             Ready to clear the path to perfect Communication?
           </h2>
 
           {/* List out benefits  */}
-          <ul>
+          <ul className="flex flex-col items-center xl:items-start -mb-8 xl:-mb-0 ">
             {benefits.map((benefit, idx) => (
-              <li key={idx} className="flex items-center gap- mb-4 text-xl">
+              <li key={idx} className="flex items-center gap-3 mb-4 text-xl">
                 <img
                   src="icons/check.png"
                   alt="✅"
@@ -38,7 +38,7 @@ const Benefits = () => {
           </ul>
 
           {/* Buttons */}
-          <section className="flex gap-3">
+          <section className="flex gap-3 mb-5 xl:mb-0">
             <ButtonSec text="Talk To Sales" />
             <ButtonPry text="Start Your Free Trial" />
           </section>
@@ -50,8 +50,8 @@ const Benefits = () => {
         <img src="images/man_video.png" alt="" className="w-full" />
 
         {/* Pinging Button to fake recording */}
-        <div className="w-[20px] h-[20px] bg-red-600 rounded-full z-[3] animate-ping absolute top-12 right-[80px]"></div>
-        <div className="w-[16px] h-[16px] bg-red-600 rounded-full z-[3] absolute top-12 right-[82px]">
+        <div className="w-[20px] h-[20px] bg-red-600 rounded-full z-[3] animate-ping absolute top-12 right-4 md:right-[80px]"></div>
+        <div className="w-[16px] h-[16px] bg-red-600 rounded-full z-[3] absolute top-12 right-4 md:right-[82px]">
           {" "}
         </div>
       </div>

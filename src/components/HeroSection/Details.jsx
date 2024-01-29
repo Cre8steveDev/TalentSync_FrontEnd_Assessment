@@ -25,23 +25,26 @@ const icons = [
 
 // Definition of components
 const Details = () => {
+  //
+  //
+
   return (
-    <section className="pt-[8rem] w-full p-8 flex flex-col sm:flex-row justify-between gap-8">
+    <section className=" pt-[3rem] sm:pt-[8rem] w-full p-8 flex flex-col sm:flex-row justify-between gap-8">
       {/* Left Box here */}
 
-      <div className="w-full flex flex-col gap-6  self-center">
-        <h1 className="text-gray-800 font-extrabold xl:text-[3.3rem] lg:text-[2.4rem]">
+      <div className="w-full flex flex-col gap-6 self-center ">
+        <h1 className="text-gray-800 font-extrabold text-3xl xl:text-[3.3rem] lg:text-[2.4rem] text-center sm:text-left md:leading-[3.4rem]">
           <p className="">Uniting the world, </p>
-          <p className="-mt-3">one video call at a time</p>
+          <p className="">one video call at a time</p>
         </h1>
-        <p className="w-[100%] text-lg xl:text-2xl text-gray-500">
+        <p className="w-[100%] text-lg xl:text-2xl text-gray-500 sm:text-left text-center dark:text-black">
           Experience the future of communication with ClearLink - where
           crystal-clear video conferencing meets unparalleled simplicity.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 items-center justify-center sm:justify-start">
+          {/*  */}
           <ButtonPry text="Start Your Free Trial" />
-
           {/* Tertiary Button */}
           <ButtonTer text="Discover AI assistant" />
         </div>
@@ -50,13 +53,13 @@ const Details = () => {
           <img
             src="images/reviews.png"
             alt=""
-            className="w-[50%] min-w-[250px] cursor-pointer"
+            className="w-[50%] min-w-[250px] cursor-pointer mx-auto  sm:ml-0"
           />
         </a>
       </div>
 
       {/* Right hand side image */}
-      <div className="w-full sm:w-[80%] flex flex-col justify-between items-center bg-blue-200 p-4 rounded-[1rem] shadow-2xl self-center">
+      <div className="w-full sm:w-[80%] flex flex-col justify-between items-center bg-blue-200 p-4 rounded-[1rem] shadow-2xl self-center dark:bg-slate-600">
         {/* Images and icons go here */}
         <div className="grid grid-cols-3 gap-3 ">
           {/* iterate over them to create */}

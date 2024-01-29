@@ -33,25 +33,31 @@ const benefits = [
 // Component Definition starts here
 const WhyClearLink = () => {
   return (
-    <div className="w-full max-w-screen-xl my-12 text-gray-800">
-      <section className="flex flex-col gap-2 relative">
+    <div className="w-full max-w-screen-xl my-12 sm:my-0 text-gray-800">
+      <section className="flex flex-col gap-2 relative mt-[70px] sm:-mt-20 text-center md:text-left">
         <p className="text-sm font-bold text-blue-700">
           The ClearLink Advantage
         </p>
         <h2 className="font-bold text-4xl">Why Choose ClearLink?</h2>
-        <p className="w-[70%] text-xl">
+        <p className="md:w-[60%] text-xl">
           In a world where connection is everything, ClearLink takes the lead.
           Our cutting-edge video conferencing app offers:
         </p>
 
-        <img src="images/line.png" className="absolute right-6" />
+        <img
+          src="images/line.png"
+          className="hidden sm:absolute right-[179px] -top-5 md:block"
+        />
       </section>
 
       {/* Container for services and picture */}
-      <div className=" mt-[60px] flex gap-8">
-        <section className="flex flex-wrap justify-between w-[60%]">
+      <div className=" mt-[60px] flex md:flex-row flex-col gap-8">
+        <section className="flex sm:flex-row flex-col flex-wrap justify-between md:w-[60%] ">
           {benefits.map((benefit, idx) => (
-            <div key={idx} className="w-[45%] flex flex-col gap-4">
+            <div
+              key={idx}
+              className="sm:w-[45%] flex flex-col gap-4 items-center md:items-start sm:mt-3"
+            >
               <img
                 src={benefit.image}
                 className="hover:scale-125 transition ease-in w-[46px]"
@@ -60,12 +66,14 @@ const WhyClearLink = () => {
                 {benefit.title}
               </h2>
 
-              <p className="text-sm xl:text-lg">{benefit.description}</p>
+              <p className="text-sm xl:text-lg text-center md:text-left">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </section>
 
-        <section className="w-[40%] self-center">
+        <section className="w-full md:w-[40%] self-center">
           <img src="images/choose_images.png" alt="" className="w-full" />
         </section>
       </div>

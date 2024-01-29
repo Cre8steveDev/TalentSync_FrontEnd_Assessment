@@ -55,12 +55,12 @@ const Faqs = () => {
 
   //   Return JSX to dom
   return (
-    <div className="flex max-w-screen-xl gap-20 mt-20">
+    <div className="flex xl:flex-row flex-col max-w-screen-xl gap-20 mt-10 md:mt-20">
       {/* Left Container */}
-      <div className="w-full flex flex-col gap-3">
+      <div className="w-full flex flex-col gap-3 items-center xl:items-start">
         <p className="font-bold text-blue-700">Support</p>
         <h3 className="text-5xl font-extrabold">FAQs</h3>
-        <p className="text-2xl">
+        <p className="text-2xl text-center xl:text-left">
           Everything you need to know about the product and billing. Can&apos;t
           find the answer you&apos;re looking for? Please{" "}
           <span className=" underline cursor-pointer hover:text-blue-600">
@@ -76,8 +76,10 @@ const Faqs = () => {
             <section
               key={idx}
               className={`${
-                open === idx ? "bg-gray-200" : "bg-white"
-              } px-[1.5rem] pb-4 rounded-2xl`}
+                open === idx
+                  ? "bg-gray-200 dark:bg-gray-600 dark:text-white"
+                  : "bg-white dark:bg-gray-300"
+              } px-[1.5rem] pb-4 rounded-2xl dark:bg-gray-`}
             >
               <div className="h-[80px] flex justify-between items-center">
                 <h3

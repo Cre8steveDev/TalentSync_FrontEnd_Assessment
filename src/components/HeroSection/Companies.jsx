@@ -14,11 +14,14 @@ const logos = [
 
 const Companies = () => {
   return (
-    <div className="mt-8 w-full flex flex-col items-center p-2">
+    <div className="mt-8 w-full flex flex-col items-center p-2 text-center sm:text-left">
       <p>Join 1,500+ companies already video conferencing the ClearLink way</p>
-      <section className="flex justify-between w-full gap-5 items-center p-2 mt-4 h-[50px] overflow-x-scroll">
+      <section className="flex justify-between w-full gap-5 items-center p-2 mt-4 h-[50px] overflow-x-scroll  sm:flex-nowrap">
         {logos.map((logo, idx) => (
-          <div key={idx} className="">
+          <div
+            key={idx}
+            className="hover:scale-150 transition ease-in sm:hover:scale-100"
+          >
             <img
               src={logo.image}
               title={logos.title}
